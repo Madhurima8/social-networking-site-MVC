@@ -61,3 +61,9 @@ sbt --version
 ---
 ## Getting Started
 ### Clone the repository
+
+```bash
+git clone https://github.com/Madhurima8/social-networking-site-MVC.git
+cd social-networking-site-MVC
+```
+---
