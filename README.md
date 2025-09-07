@@ -19,9 +19,6 @@ Hot-reload development via `sbt`, and first-class IDE support with **IntelliJ ID
 
 - Standard Play MVC layout (`app/controllers`, `app/models`, `app/views`)
 - Routes configured in `conf/routes`
-- Dependency injection with Guice
-- Dev server with hot reload (`~run`)
-- Production packaging via `sbt dist` / `sbt stage`
 
 ---
 
