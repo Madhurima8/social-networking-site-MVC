@@ -60,4 +60,4 @@ sbt --version
 ```
 ---
 ## Getting Started
-# Clone the repository
+### Clone the repository
