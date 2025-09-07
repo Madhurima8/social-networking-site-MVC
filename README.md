@@ -57,3 +57,7 @@ Check:
 ```bash
 java -version
 sbt --version
+```
+---
+## Getting Started
+# Clone the repository
