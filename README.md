@@ -45,8 +45,6 @@ Hot-reload development via `sbt`, and first-class IDE support with **IntelliJ ID
 ```
 ---
 
----
-
 ## Prerequisites
 
 - **JDK:** 17 (preferred)
@@ -67,3 +65,9 @@ git clone https://github.com/Madhurima8/social-networking-site-MVC.git
 cd social-networking-site-MVC
 ```
 ---
+## Run in IntelliJ IDEA
+1. View → Tool Windows → sbt (or sbt Shell), then run:
+```bash
+run
+```
+2. Navigate to http://localhost:9000
