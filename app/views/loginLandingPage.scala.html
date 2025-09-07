@@ -1,0 +1,76 @@
+@(detail: Seq[SharePicture],sort:Int)(implicit session: Session, request: RequestHeader)
+@import views.html.helper.CSRF
+
+@main("Welcome to Play", session){
+    <head>
+        <style>
+            #leftbox {
+                float: left;
+                width: 25%;
+                height: 280px;
+            }
+
+            #middlebox {
+                float: left;
+                width: 50%;
+                height: 280px;
+            }
+
+            #rightbox {
+                float: right;
+                width: 25%;
+                height: 280px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>Welcome! You are logged in.</h1>
+            <form action="@routes.SharePictureController.sortBy" method="post">
+                @CSRF.formField
+                <label for="sorting">Sort By:</label>
+                <select onchange="this.form.submit()" name="sorting" id="sorting">
+                    <option value=0  @(if(sort == 0) "selected" else "")>No Sorting</option>
+                    <option value=1  @(if(sort == 1) "selected" else "")>Date in Asc</option>
+                    <option value=2  @(if(sort == 2) "selected" else "")>Date in Desc</option>
+                    <option value=3  @(if(sort == 3) "selected" else "")>No. of likes Asc</option>
+                    <option value=4  @(if(sort == 5) "selected" else "")>No. of likes Desc</option>
+                </select>
+                <noscript>
+                    <input type="submit" value="sort">
+                </noscript>
+            </form>
+
+            @for(picture <- detail){
+                <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="@picture.image" class="card-img-top img-thumbnail" alt="">
+                    <div class="card-body">
+                        <h3>Added on @picture.date by @picture.addedBy</h3>
+                            <!--<h5 class="card-title">Card title</h5>-->
+                        <p class="card-text">Description : @picture.description</p>
+                        <h4><button type="button">Likes</button> : @picture.likes<br>
+                            Comments:</h4>
+                        <!--for limiting the comments to 2 in the front page-->
+                        @for((comment, index) <- picture.comments.zipWithIndex.take(2)) {
+                            <h5> @comment.username : @comment.lines</h5>
+                        }
+                        @if(picture.comments.length > 2) {
+                            <p>See more comments...</p>
+                        }
+                        <a href="@routes.SharePictureController.showPicDetails(picture.id)" class="btn btn-primary">See More</a>
+                    </div>
+                </div>
+                </div>
+            }
+        </div>
+    </body>
+    <script>
+
+    </script>
+}

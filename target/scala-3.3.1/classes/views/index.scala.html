@@ -1,0 +1,14 @@
+@(welcome: String)(implicit session: Session)
+
+  @main(welcome, session) {
+    @defining(play.core.PlayVersion.current) { version =>
+
+      <div id="content" class="wrapper doc">
+        <article>
+          <h1>@welcome</h1>
+@*          <h2>MVC Pattern in the Play Framework</h2>*@
+
+        </article>
+      </div>
+    }
+  }
