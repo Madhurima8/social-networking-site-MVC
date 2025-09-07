@@ -1,0 +1,26 @@
+# sbt / Play
+target/
+project/target/
+project/project/
+dist/
+RUNNING_PID
+logs/
+tmp/
+
+# IDEs
+.idea/
+.bsp/
+.metals/
+.vscode/
+*.iml
+
+# Node/Web (if present)
+node_modules/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Secrets (keep examples only)
+conf/*.secret
+*.env

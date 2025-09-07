@@ -1,5 +1,0 @@
-[debug] Copy resource mappings: 
-[debug] 	(C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\conf\application.conf,C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\target\scala-3.3.1\classes\application.conf)
-[debug] 	(C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\conf\logback.xml,C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\target\scala-3.3.1\classes\logback.xml)
-[debug] 	(C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\conf\messages,C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\target\scala-3.3.1\classes\messages)
-[debug] 	(C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\conf\routes,C:\Users\GuestPC\OneDrive - Vrije Universiteit Brussel\Software Architectures\MVCPlayAssignment\Assignment2\target\scala-3.3.1\classes\routes)
